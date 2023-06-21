@@ -1,0 +1,70 @@
+.footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: $colorPrimary;
+    color: white;
+    @media (max-width: 700px) {
+      gap: 2em;
+    }
+  }
+  &__sections {
+    width: 95%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+    }
+    &_logo {
+        display: flex;
+        justify-content: center;
+      width: 33%;
+    }
+    &_questions {
+      width: 34%;
+      text-align: center;
+      p {
+        &:hover {
+          color: $colorSecondary;
+          cursor: pointer;
+        }
+      }
+    }
+    &_contacts {
+        width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        flex-wrap: nowrap;
+      img {
+        &:hover {
+          filter: invert(25%) sepia(68%) saturate(7090%) hue-rotate(295deg)
+            brightness(114%) contrast(126%);
+        }
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    a {
+      color: $colorWhite;
+    }
+  }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    &__sections{
+        &_contacts{
+            width: 90%;
+        }
+    }
+  }
+}

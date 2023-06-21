@@ -1,0 +1,31 @@
+.navbar {
+  &__container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $colorPrimary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  &__filter {
+    input {
+      height: 30px;
+      width: 276px;
+      border-radius: 8px;
+      outline-color: $colorSecondary;
+      text-align: center;
+      color: $colorPrimary;
+    }
+  }
+  @media (max-width: 700px) {
+    &__filter {
+      display: flex;
+      justify-content: center;
+      input {
+        width: 90%;
+      }
+    }
+  }
+}
