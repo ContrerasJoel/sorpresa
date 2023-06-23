@@ -6,8 +6,8 @@ import { Inter } from "next/font/google"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Mente Intima",
-  description: "Tienda de tecnología sexual",
+  title: "EsTuMejorSorpresa",
+  description: "Tienda Online Desayunos y Arreglos para fechas especiales",
 }
 
 interface props {
